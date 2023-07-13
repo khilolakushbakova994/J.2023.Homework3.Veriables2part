@@ -55,6 +55,14 @@ public class Main {
         float chalks = 2.786f;
         double printers = 27.12;
         short budget = -159;
+
+        System.out.println(books);
+        System.out.println(pens);
+        System.out.println(notebooks);
+        System.out.println(erasers);
+        System.out.println(chalks);
+        System.out.println(printers);
+        System.out.println(budget);
     }
 
     public static void task3() {
