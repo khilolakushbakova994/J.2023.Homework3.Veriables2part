@@ -154,13 +154,18 @@ public class Main {
         //  а не считать самим общую сумму граммов.
 
         short weightOf1banana = 80;
+        short bananaQuantity = 5;
         short weightOf100mlMilk = 105;
-        short iceCream = 200;
+        short totalWeightOfMilk = 200;
+        short iceCream = 100;
+        short numberOfIceCream = 2;
         short oneEgg = 70;
-        int weightOf5babanas = weightOf1banana * 5;
-        int weightOf200mlMilk = weightOf100mlMilk * 2;
-        int eggs4 = oneEgg * 4;
-        float totalWeightInGram = weightOf5babanas + weightOf200mlMilk + iceCream + eggs4;
+        short numberOfEggs = 4;
+        int weightOf5babanas = weightOf1banana * bananaQuantity;
+        int weightOf200mlMilk = totalWeightOfMilk * weightOf100mlMilk / 100;
+        int eggs4 = oneEgg * numberOfEggs;
+        int weightOfIceCream = iceCream * numberOfIceCream;
+        float totalWeightInGram = weightOf5babanas + weightOf200mlMilk + weightOfIceCream + eggs4;
         System.out.println(totalWeightInGram + "  грамм");
         float in1kg = 1000f;
         float totalWeightInKg = totalWeightInGram / in1kg;
